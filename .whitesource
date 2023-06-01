@@ -1,0 +1,16 @@
+{
+  "settingsInheritedFrom": "samq-democorp/whitesource-config@main",
+    "scanSettings": {
+    "baseBranches": ["contrib", "v10/dev", "v9/contrib", "v8/dev"]
+  },
+  "remediateSettings": {
+    "workflowRules": {
+      "enabled": false
+    },
+    "enableRenovate": true,
+    "extends": [
+       "config:base",
+       "github>whitesource/merge-confidence:beta"
+      ]
+  }
+}
